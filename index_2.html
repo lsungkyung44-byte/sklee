@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공간온 GONGGAN ON — 공간을 켜고, 일상에 온기를 더하다</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+html{scroll-behavior:smooth;}
+main > section[id]{scroll-margin-top:90px;}
+nav.menu a.on{color:var(--ink);}
+nav.menu a.on::before{content:'';position:absolute;left:0;bottom:-3px;width:100%;height:1.5px;background:var(--clay);}
+nav.menu a{position:relative;}
+</style>
+</head>
+<body>
+
+<header class="nav" id="siteNav">
+  <div class="wrap-wide nav-inner">
+    <a href="#heroSection" class="brand" aria-label="공간온 GONGGAN ON 홈으로">
+      <img src="logo-icon.png" alt="" width="33" height="36" class="brand-icon">
+      <span class="name"><span class="kr">공간온</span><span class="en">GONGGAN ON</span></span>
+    </a>
+    <nav class="menu" aria-label="주요 메뉴">
+      <a href="#about">ABOUT</a>
+      <a href="#portfolio">PORTFOLIO</a>
+      <a href="#service">SERVICE</a>
+      <a href="#process">PROCESS</a>
+      <a href="#journal">JOURNAL</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <a href="#contact" class="nav-cta">상담 문의</a>
+    <button class="burger" id="burgerBtn" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">ABOUT</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#service">SERVICE</a>
+    <a href="#process">PROCESS</a>
+    <a href="#journal">JOURNAL</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</header>
+
+<main>
+<section class="hero playing" id="heroSection">
+    <div class="hero-media">
+      <img src="hero_poster.jpg" alt="장진영 대표가 공간온을 소개하는 영상" class="cover">
+      <video playsinline autoplay muted loop preload="auto" poster="hero_poster.jpg">
+        <source src="hero.mp4" type="video/mp4">
+      </video>
+    </div>
+    <button class="play-btn" id="playBtn" aria-label="소리 켜기/끄기" style="display:none;">
+      <svg width="16" height="18" viewBox="0 0 20 22" fill="none"><path d="M1 1.5V20.5L19 11L1 1.5Z" fill="#fff"/></svg>
+    </button>
+    <div class="wrap-wide hero-inner">
+      <span class="eyebrow">GONGGAN ON · INTERIOR &amp; SPACE DESIGN</span>
+      <h1 class="display">공간을 켜고,<br>일상에 온기를 더하다.</h1>
+      <p class="sub">사람의 일상을 이해하고 시간이 지나도 편안한 공간을 도면 위에서부터 세심하게 설계합니다.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">VIEW PROJECTS</a>
+        <a href="#contact" class="link-arrow">상담 문의<span class="rule"></span>→</a>
+      </div>
+    </div>
+  </section>
+<section id="about" class="page-header">
+    <div class="wrap reveal">
+      <span class="eyebrow">ABOUT GONGGAN ON</span>
+      <h1 class="display">공간에 사람을 담습니다.</h1>
+      <p class="body-lg">공간온은 화려함보다 오래 머물수록 편안한 공간, 유행보다 시간이 지나도 가치가 남는 공간을 추구하는 프리미엄 인테리어 &amp; 공간 디자인 스튜디오입니다.</p>
+    </div>
+  </section><section class="pad-tight">
+    <div class="wrap">
+      <div class="value-row">
+        <div class="value-cell reveal"><span class="eng">01 · PEOPLE FIRST</span><h4>고객 중심</h4><p>고객의 라이프스타일과 취향을 먼저 이해합니다.</p></div>
+        <div class="value-cell reveal"><span class="eng">02 · TAILORED</span><h4>맞춤 디자인</h4><p>공간의 기능과 미적 가치를 함께 설계합니다.</p></div>
+        <div class="value-cell reveal"><span class="eng">03 · CRAFTSMANSHIP</span><h4>디테일 시공</h4><p>작은 마감까지 세심하게 관리합니다.</p></div>
+        <div class="value-cell reveal"><span class="eng">04 · TIMELESS</span><h4>지속 가능한 공간</h4><p>시간이 지나도 편안하고 가치 있는 공간을 만듭니다.</p></div>
+      </div>
+    </div>
+  </section><section class="pad surface">
+    <div class="wrap">
+      <div class="teaser reverse reveal">
+        <div class="teaser-media crop-frame"><span class="ct"></span><img src="mood_square.jpg" alt="따뜻한 오후 빛이 드는 거실"><span class="fig"><b>FIG.02</b>PHILOSOPHY</span></div>
+        <div class="teaser-text">
+          <span class="eyebrow">PHILOSOPHY</span>
+          <h2 class="display">사람 · 기능 · 감각 · 시간</h2>
+          <p>좋은 디자인은 눈에 보이는 아름다움에서 끝나지 않습니다. 아침에 일어나는 순간부터 하루를 마치고 돌아오는 시간까지, 생활의 작은 순간들이 조금 더 편안해지는 것 — 공간온은 사람의 일상을 도면 단계에서부터 설계합니다. 구조와 동선이 만드는 기능, 소재와 빛이 만드는 감각, 그리고 시간이 지나도 변하지 않는 가치를 함께 고려합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section><section class="pad">
+    <div class="wrap">
+      <span class="eyebrow">CEO INTRODUCTION</span>
+      <div class="ceo-grid" style="margin-top:28px;">
+        <div class="reveal crop-frame"><span class="ct"></span><img src="ceo_main.jpg" alt="공간온 장진영 대표"><span class="fig"><b>PROFILE</b>장진영 · CEO</span></div>
+        <div class="reveal">
+          <p class="ceo-quote">"좋은 공간은 화려함이 아닌, 그 안에서 살아갈 사람을 먼저 생각하는 것에서 시작됩니다."</p>
+          <div class="ceo-bio">
+            <p>공간온은 화려함보다 오래 머물수록 편안한 공간, 유행보다 시간이 지나도 가치가 남는 공간을 추구합니다. 고객의 취향과 생활방식을 세심하게 이해하고 공간의 구조, 동선, 소재, 빛, 가구의 조화를 고려하여 각 고객에게 맞는 공간을 제안합니다.</p>
+            <p>머무는 시간이 편안하고, 시간이 지날수록 더 좋아지는 공간을 만들겠습니다.</p>
+          </div>
+          <div class="ceo-name"><span class="who">장진영</span><span class="role">CEO · 공간디자이너</span></div>
+          <div class="ceo-cred">
+            <b>학력</b><span>가천대학교 서양화과 졸업 · 건국대학교 대학원 실내건축학과 졸업</span>
+            <b>경력</b><span>인테리어 디자인 실무 경력 · 미 디자인 실장 4년 · 공간기획 및 디자인 컨설팅 · 現 공간온 대표</span>
+          </div>
+          <div class="contact-strip">
+            <a href="tel:010-9969-5618"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>010-9969-5618</a>
+            <a href="mailto:jennychang0513@gmail.com"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>jennychang0513@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-strip">
+        <div class="action-item reveal crop-frame"><span class="ct"></span><img src="act_consult.jpg" alt="고객 상담 중인 장진영 대표"></div>
+        <div class="action-item reveal crop-frame"><span class="ct"></span><img src="act_design.jpg" alt="디자인 콘셉트를 제안하는 장진영 대표"></div>
+        <div class="action-item reveal crop-frame"><span class="ct"></span><img src="act_material.jpg" alt="소재 샘플을 검토하는 장진영 대표"></div>
+        <div class="action-item reveal crop-frame"><span class="ct"></span><img src="act_site.jpg" alt="현장 디테일을 확인하는 장진영 대표"></div>
+      </div>
+    </div>
+  </section>
+<section id="portfolio" class="page-header">
+    <div class="wrap reveal">
+      <span class="eyebrow">SELECTED PROJECTS</span>
+      <h1 class="display">공간온이 완성한 공간을<br>만나보세요.</h1>
+      <p>주거부터 상업, 오피스 공간까지 — 공간온이 함께한 프로젝트입니다. 사진을 클릭하면 위치·면적·콘셉트 등 상세 내용을 볼 수 있습니다.</p>
+    </div>
+  </section><section class="pad-tight">
+    <div class="wrap">
+      <div class="pf-masonry" id="pfGrid"></div>
+    </div>
+  </section><section class="pad surface">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">MATERIAL &amp; DETAIL</span>
+        <h2 class="display" style="font-size:clamp(26px,3.4vw,40px);margin-top:16px;">소재와 디테일</h2>
+        <p style="margin-top:16px;color:var(--ink-soft);max-width:56ch;">공간온의 공간은 몇 가지 절제된 소재의 조합으로 완성됩니다. 실제 프로젝트에서 만난 소재들입니다.</p>
+      </div>
+      <div class="material-grid">
+        <div class="material-card reveal"><span class="crop-frame"><span class="ct"></span><img src="pf_studio.jpg" alt="내추럴 스톤 리셉션 데스크"></span><figcaption><b>Natural Stone</b>브랜드 스튜디오 리셉션</figcaption></div>
+        <div class="material-card reveal"><span class="crop-frame"><span class="ct"></span><img src="pf_kitchen.jpg" alt="European Oak 주방 아일랜드"></span><figcaption><b>European Oak</b>주방 아일랜드</figcaption></div>
+        <div class="material-card reveal"><span class="crop-frame"><span class="ct"></span><img src="pf_cafe.jpg" alt="Warm Plaster 카페 라운지"></span><figcaption><b>Warm Plaster</b>카페 라운지</figcaption></div>
+        <div class="material-card reveal"><span class="crop-frame"><span class="ct"></span><img src="act_material.jpg" alt="소재 샘플을 검토하는 장진영 대표"></span><figcaption><b>Material Study</b>소재 선정 과정</figcaption></div>
+      </div>
+    </div>
+  </section>
+<section id="service" class="page-header">
+    <div class="wrap reveal">
+      <span class="eyebrow">SERVICE</span>
+      <h1 class="display">공간의 시작부터<br>완성까지</h1>
+      <p>공간온은 주거, 상업, 오피스 공간을 아우르는 토탈 인테리어 &amp; 공간 컨설팅 서비스를 제공합니다.</p>
+    </div>
+  </section><section class="pad-tight">
+    <div class="wrap">
+      <div class="svc-list">
+        <div class="svc-row reveal">
+          <span class="n">01</span>
+          <h3 class="eng-display">RESIDENTIAL</h3>
+          <div><p>아파트, 주택, 주방, 거실, 침실 등 주거 공간 전반과 부분 리모델링을 진행합니다. 실제 생활 동선과 라이프스타일을 먼저 이해한 뒤 설계합니다.</p></div>
+        </div>
+        <div class="svc-row reveal">
+          <span class="n">02</span>
+          <h3 class="eng-display">COMMERCIAL</h3>
+          <div><p>카페, 매장, 브랜드 스튜디오, 쇼룸 등 상업 공간을 디자인합니다. 브랜드 아이덴티티가 공간 언어로 자연스럽게 드러나도록 구성합니다.</p></div>
+        </div>
+        <div class="svc-row reveal">
+          <span class="n">03</span>
+          <h3 class="eng-display">OFFICE</h3>
+          <div><p>사무실, 회의실, 업무공간, 리셉션 등 오피스 환경을 설계합니다. 집중과 협업이 공존하는 균형 잡힌 공간을 제안합니다.</p></div>
+        </div>
+        <div class="svc-row reveal">
+          <span class="n">04</span>
+          <h3 class="eng-display">SPACE CONSULTING</h3>
+          <div><p>공간 기획, 레이아웃, 컬러, 소재, 가구, 스타일링까지 — 시공 없이 공간 전략만 필요한 경우에도 컨설팅으로 함께합니다.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="process" class="page-header">
+    <div class="wrap reveal">
+      <span class="eyebrow">PROCESS</span>
+      <h1 class="display">상담부터 완성까지<br>함께합니다.</h1>
+      <p>공간온은 상담, 현장 실측, 디자인, 견적, 시공, 스타일링까지 전 과정을 직접 관리합니다.</p>
+    </div>
+  </section><section class="pad-tight">
+    <div class="wrap" style="max-width:820px;">
+      <div class="proc-list">
+        <div class="proc-item reveal">
+          <span class="n">01</span>
+          <div class="rail"><span class="eng">CONSULTATION</span><h4>상담</h4><p>고객의 생활방식, 취향, 예산과 원하는 공간을 상담합니다.</p></div>
+        </div>
+        <div class="proc-item reveal">
+          <span class="n">02</span>
+          <div class="rail"><span class="eng">SITE SURVEY</span><h4>현장 실측</h4><p>현장을 방문하여 구조와 치수를 확인합니다.</p></div>
+        </div>
+        <div class="proc-item reveal">
+          <span class="n">03</span>
+          <div class="rail"><span class="eng">DESIGN</span><h4>디자인</h4><p>레이아웃과 디자인 콘셉트를 도면으로 제안합니다.</p></div>
+        </div>
+        <div class="proc-item reveal">
+          <span class="n">04</span>
+          <div class="rail"><span class="eng">ESTIMATE</span><h4>견적</h4><p>마감재, 컬러, 조명, 가구 등을 구체화하여 상세 견적을 안내합니다.</p></div>
+        </div>
+        <div class="proc-item reveal">
+          <span class="n">05</span>
+          <div class="rail"><span class="eng">CONSTRUCTION</span><h4>시공</h4><p>설계안을 기준으로 시공하고 공정을 관리합니다.</p></div>
+        </div>
+        <div class="proc-item reveal">
+          <span class="n">06</span>
+          <div class="rail"><span class="eng">STYLING &amp; COMPLETION</span><h4>스타일링 &amp; 준공</h4><p>가구와 소품 스타일링, 최종 검수 후 완성된 공간을 전달합니다.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="journal" class="page-header">
+    <div class="wrap reveal">
+      <span class="eyebrow">JOURNAL</span>
+      <h1 class="display">공간온의 소식과<br>이야기.</h1>
+      <p>공지 사항과 프로젝트 소식, 공간에 대한 짧은 생각들을 기록합니다.</p>
+    </div>
+  </section><section class="pad-tight">
+    <div class="wrap">
+      <div class="journal-list">
+        <div class="journal-row reveal">
+          <div><span class="tag">NOTICE</span><h3>2026년 하반기 상담 예약 안내</h3></div>
+          <span class="date">2026.08.20</span>
+        </div>
+        <div class="journal-row reveal">
+          <div><span class="tag">PROJECT</span><h3>브랜드 스튜디오 리셉션 공간, 시공을 마쳤습니다</h3></div>
+          <span class="date">2026.07.14</span>
+        </div>
+        <div class="journal-row reveal">
+          <div><span class="tag">JOURNAL</span><h3>오래 머물수록 편안한 공간이란 — 공간온의 소재 선택 기준</h3></div>
+          <span class="date">2026.06.02</span>
+        </div>
+        <div class="journal-row reveal">
+          <div><span class="tag">PROJECT</span><h3>서울 아파트 주방 리노베이션, 유러피안 오크로 완성하다</h3></div>
+          <span class="date">2026.04.28</span>
+        </div>
+        <div class="journal-row reveal">
+          <div><span class="tag">NOTICE</span><h3>설·추석 연휴 상담 및 시공 일정 안내</h3></div>
+          <span class="date">2026.02.10</span>
+        </div>
+        <div class="journal-row reveal">
+          <div><span class="tag">JOURNAL</span><h3>빛이 머무는 방식 — 조명 계획에서 놓치기 쉬운 세 가지</h3></div>
+          <span class="date">2025.12.19</span>
+        </div>
+        <div class="journal-row reveal">
+          <div><span class="tag">PROJECT</span><h3>카페 인테리어 프로젝트, 따뜻한 플라스터 마감으로 완성</h3></div>
+          <span class="date">2025.11.05</span>
+        </div>
+        <div class="journal-row reveal">
+          <div><span class="tag">NOTICE</span><h3>공간온 공식 홈페이지를 새롭게 오픈했습니다</h3></div>
+          <span class="date">2025.09.01</span>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="cta-band">
+    <div class="wrap cta-band-inner">
+      <div class="reveal">
+        <span class="eyebrow">PROJECT INQUIRY</span>
+        <h2 class="display">당신의 공간 이야기를<br>들려주세요.</h2>
+      </div>
+      <a href="#contact" class="btn btn-outline">상담 신청하기</a>
+    </div>
+  </section>
+<section id="contact" class="page-header">
+    <div class="wrap reveal">
+      <span class="eyebrow">PROJECT INQUIRY</span>
+      <h1 class="display">당신의 공간 이야기를<br>들려주세요.</h1>
+      <p>상담은 방문·전화·이메일 모두 가능합니다. 공간 유형과 원하시는 분위기, 예산 범위를 남겨주시면 순차적으로 연락드리겠습니다.</p>
+    </div>
+  </section><section class="pad-tight">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <p class="quote">"화려함이 아닌, 그 안에서 살아갈 사람을 먼저 생각하는 공간을 만듭니다."</p>
+          <div class="divider2"></div>
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>010-9969-5618</span>
+          </div>
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+            <span>jennychang0513@gmail.com</span>
+          </div>
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>
+            <span>www.gongganon.com</span>
+          </div>
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span>경기도 용인시 수지구 동천로 123, 4F</span>
+          </div>
+          <div class="name">장진영</div>
+          <div class="role">CEO · 공간디자이너</div>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow">상담 신청서</span>
+          <form class="consult" id="consultForm" style="margin-top:24px;">
+            <div class="field">
+              <label for="f-name">이름 *</label>
+              <input id="f-name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="f-phone">연락처 *</label>
+              <input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="010-0000-0000">
+            </div>
+            <div class="field">
+              <label for="f-type">공간 유형 *</label>
+              <select id="f-type" name="space_type" required>
+                <option value="" disabled selected>선택해 주세요</option>
+                <option>주거 · 아파트</option>
+                <option>주거 · 주택</option>
+                <option>상업 · 카페/매장</option>
+                <option>오피스</option>
+                <option>공간 컨설팅</option>
+                <option>기타</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-region">지역</label>
+              <input id="f-region" name="region" type="text" placeholder="예: 서울 강남구" autocomplete="address-level2">
+            </div>
+            <div class="field">
+              <label for="f-area">예상 면적</label>
+              <input id="f-area" name="area" type="text" placeholder="예: 32평형">
+            </div>
+            <div class="field">
+              <label for="f-budget">예상 예산</label>
+              <select id="f-budget" name="budget">
+                <option value="" disabled selected>선택해 주세요</option>
+                <option>3,000만원 미만</option>
+                <option>3,000 – 5,000만원</option>
+                <option>5,000만원 – 1억원</option>
+                <option>1억원 이상</option>
+                <option>상담 후 결정</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="f-date">공사 희망일</label>
+              <input id="f-date" name="preferred_date" type="text" placeholder="예: 2026년 10월 중">
+            </div>
+            <div class="field full">
+              <label for="f-msg">문의 내용</label>
+              <textarea id="f-msg" name="message" placeholder="원하시는 공간의 분위기, 라이프스타일, 참고하고 싶은 이미지 등을 자유롭게 남겨주세요."></textarea>
+            </div>
+            <p class="form-note">남겨주신 정보는 상담 목적 외 다른 용도로 사용되지 않으며, 상담 진행을 위해서만 활용됩니다.</p>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">상담 신청하기</button>
+              <span style="font-family:'Space Mono',monospace;font-size:12px;color:var(--ink-soft);">보통 1–2 영업일 내 회신드립니다.</span>
+            </div>
+            <div class="success" id="formSuccess" role="status">
+              <b>상담 신청이 접수되었습니다.</b>
+              남겨주신 연락처로 1–2 영업일 내 연락드리겠습니다. 감사합니다.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap-wide footer-inner">
+    <span>© <span id="year"></span> GONGGAN ON. All rights reserved.</span>
+    <nav class="footer-links">
+      <a href="#about">ABOUT</a><a href="#portfolio">PORTFOLIO</a><a href="#service">SERVICE</a>
+      <a href="#process">PROCESS</a><a href="#journal">JOURNAL</a><a href="#contact">CONTACT</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="pfModal" role="dialog" aria-modal="true" aria-label="프로젝트 상세">
+  <button class="modal-nav modal-prev" id="pfPrev" aria-label="이전 프로젝트">‹</button>
+  <div class="modal" id="pfModalBody"></div>
+  <button class="modal-nav modal-next" id="pfNext" aria-label="다음 프로젝트">›</button>
+</div>
+<script src="main.js" defer></script>
+<script>
+// simple scroll-spy for single-page nav
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = Array.from(document.querySelectorAll('nav.menu a'));
+  const sections = navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('on'));
+        const link = navLinks.find(a => a.getAttribute('href') === '#' + e.target.id);
+        if (link) link.classList.add('on');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => spy.observe(s));
+});
+</script>
+</body>
+</html>
